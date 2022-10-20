@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
+  align-items:center;
+}
+
+h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  display: flex;
   align-items: center;
+  text-align: center;
+  color: #000000;
+  padding-top: 48px;
+  margin-bottom: 108px;
+}
+
+.game{
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 900px;
+  height: 461px;
 }
 
-.App-link {
-  color: #61dafb;
+.itemGame{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #0A0A0C;
+
+  background: #FFFFFF;
+  border: 0.5px solid #CDCDCD;
+  border-radius: 8px;
+  width: 80px;
+  height: 104px;
+  
+
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-right: 22px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hide{
+  font-size: 0px;
+}
+
+.hide:hover{
+  box-shadow: 10px 5px 5px rgba(67, 67, 67, 0.89);
+}
+
+.active{
+  border: 0.5px solid #ED5517;
+}
+
+.found{
+  border: 1px solid #0A0A0C;
 }
